@@ -57,7 +57,6 @@
     font-weight: 600;
 
     transition: background-color 0.2s;
-    outline: none;
 }
 
 .countdownButton > img {
