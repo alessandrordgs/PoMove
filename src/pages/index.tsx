@@ -18,7 +18,7 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps ) {
-  console.log(props)
+ 
   return (
    
     <ChallengesProvider 
