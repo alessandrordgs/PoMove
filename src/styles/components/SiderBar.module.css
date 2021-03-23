@@ -1,0 +1,29 @@
+.siderbar {
+    background: #fff;
+    width: 100px;
+    height: 100vh;
+    position: absolute;
+}
+.logo{
+    margin: 2rem;
+}
+
+.containerIcons{
+ margin-top: 9rem;
+ display: flex;
+ flex-direction: column;
+}
+
+.button{
+    background:#fff ;
+    border: none;
+    margin-left: 0.05rem;
+    margin-top: 1rem;
+    color: #666666;
+}
+
+.button:hover{
+    border-left: 4px solid #5965E0;
+    color: #5965E0;
+   
+}
