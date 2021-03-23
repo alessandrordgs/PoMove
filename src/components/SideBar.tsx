@@ -4,7 +4,7 @@ export function SiderBar(){
     return(
         <aside className={styles.siderbar}>
             <header className={styles.logo}>
-              <img src="logoSidebar.svg" alt=""/>
+              <img src="icons/logoSidebar.svg" alt=""/>
             </header>
             <main className={styles.containerIcons}>
                 <button className={styles.button}>
