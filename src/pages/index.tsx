@@ -1,72 +1,32 @@
-import { CompletedChallenges } from "../components/CompletedChallenges";
-import { Countdown } from "../components/Countdown";
-import { ExperienceBar } from "../components/ExperienceBar";
-import { Profile } from '../components/Profile';
-
-import Head from 'next/head'
-import {GetServerSideProps} from 'next'
- 
-import styles from '../styles/pages/Home.module.css'
-import { ChallengeBox } from "../components/ChallengeBox";
-import { CountdownProvider } from "../contexts/CountdownContext";
-import { ChallengesProvider } from "../contexts/ChallengesContext";
-import { SiderBar } from "../components/SideBar";
-
-interface HomeProps {
-  level: number;
-  currentExperience: number;
-  challengesCompleted: number;
-}
-
-export default function Home(props: HomeProps ) {
- 
+import { FiArrowRight } from 'react-icons/fi';
+import styles from '../styles/pages/Login.module.css';
+import Link from 'next/link'
+export default function login(){
   return (
-   
-    <ChallengesProvider 
-    level={props.level}
-    currentExperience={props.currentExperience}
-    challengesCompleted={props.challengesCompleted}
-    >
-       <SiderBar/>
-    <div className={styles.container}>
+    <main className={styles.main}>
+      <div className={styles.logoMain}>
+        <img src="logoMain.svg" alt=""/>
+      </div>
+
+      <div className={styles.login}>
+        <div className={styles.logoSeg}>
+          <img src="logoSeg.svg" alt=""/>
+        </div>
         
-        <Head>
-          <title>Início | PoMove</title>
-        </Head>
-       
-        <ExperienceBar/> 
-        
-        <CountdownProvider>    
-            <section>
-          <div>
-            <Profile/>
-            <CompletedChallenges/>
-            <Countdown/>
-          </div>
-          <div>
-            <ChallengeBox/>
-          </div>
-        </section>
-        </CountdownProvider>
+        <div className={styles.fieldLogin}>
+           <h1>Bem-vindo</h1>
+           <span>Faça o login</span>
+           <label className={styles.label}>
+              <input className={styles.input} type="text" name="" id=""/>
+              <button className={styles.button}>
+               <Link href='/challenge'>
+               <FiArrowRight />
+               </Link>
+              </button>
+           </label>
+        </div>
 
       </div>
-   </ChallengesProvider>
-    
+    </main>
   )
 }
-
-
-export const getServerSideProps :GetServerSideProps = async (ctx) => {
-  
-   const {level, currentExperience, challengesCompleted} = ctx.req.cookies
-
-
-  
-  return {
-     props:{
-      level:Number (level),
-      currentExperience:Number ( currentExperience ),
-      challengesCompleted:Number ( challengesCompleted),
-     }
-  }
-}  

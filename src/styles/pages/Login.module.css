@@ -1,0 +1,49 @@
+.main{
+    background: #5965E0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.logoMain img{
+    height:100vh;
+}
+
+.login{
+    margin: 15rem 0 0 10rem;
+}
+.fieldLogin{
+    display: flex;
+    flex-direction: column;
+}
+.fieldLogin h1, .fieldLogin span{
+  color: var(--white);
+}
+.label{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.input{
+    background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.2) 100%);
+    border: 0;
+    height: 3rem;
+    width: 18rem;
+    outline: none;
+    padding-left: 1rem;
+    color: var(--white);
+}
+
+.input:hover{
+    border: 1.5px solid #414AA3
+}
+
+.button{
+    background: #4953B8;
+    border: 0;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.8rem
+}
+
+
