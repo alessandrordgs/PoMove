@@ -17,16 +17,16 @@ export default function login(){
         </div>
         
         <div className={styles.fieldLogin}>
-           <h1>Bem-vindo</h1>
-           <span>Faça o login</span>
-           <label className={styles.label}>
-              <input className={styles.input} type="text" name="" id=""/>
-              <button className={styles.button}>
-               <Link href='/challenge'>
-               <FiArrowRight />
-               </Link>
-              </button>
-           </label>
+            <h1>Bem-vindo</h1>
+            <span>Faça o login</span>
+            <label className={styles.label}>
+                <input className={styles.input} type="text" name="" id=""/>
+                <button className={styles.button}>
+                  <Link href='/challenge'>
+                  <FiArrowRight />
+                  </Link>
+                </button>
+            </label>
         </div>
 
       </div>
