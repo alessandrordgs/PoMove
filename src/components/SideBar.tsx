@@ -4,7 +4,7 @@ import {FaBars} from 'react-icons/fa'
 import { AiOutlineClose } from 'react-icons/ai'
 import styles from '../styles/components/SiderBar.module.css'
 export function SideBar(){
-    const [sidebar, setSidebar] = useState(false);
+    const [sidebar, setSidebar] = useState(true);
     const showsidebar = () => setSidebar(!sidebar)
     return(
          <div>
