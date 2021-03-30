@@ -1,55 +1,12 @@
-.container{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-}
-.buttonSideBarDisable{
-    height: 4rem;
-    width:6.25rem;
-    position: absolute;
-    border: 0;
-    background: var(--background);
-}
-.buttonSideBar{
-    height: 4rem;
-    width:6.25rem;
-    position: absolute;
-    background: #fff;
-    border: 0;
-}
-.sidebarDisable {
-    left: -100%;
-    position: fixed;
-}
-
-.sidebar{
-    left: 0;
-    background: #fff;
-    width: 100px;
-    height: 100vh;
-    
-}
-.logo{
-    margin: 6rem 1.5rem;
-}
-
-.containerIcons{
- margin-top: 0rem;
- display: flex;
- flex-direction: column;
-}
-
-.button{
-    background:#fff ;
-    border: none;
-    margin-left: 0.05rem;
-    margin-top: 1rem;
-    color: #666666;
-}
-
-.button:hover{
-    border-left: 4px solid #5965E0;
-    color: #5965E0;
-   
-}
-
+.container{position: absolute;display: flex;flex-direction: column;z-index: 1;}
+.buttonSideBarDisable{height: 4rem;width:6.25rem;position: absolute;border: 0;background: var(--background);font-size: 1.8rem;}
+.buttonSideBarDisable:hover{color: var( --blue-dark)}
+.buttonSideBar{height: 4rem;width:6.25rem;position: absolute;background: #fff;border: 0;font-size: 1.8rem;}
+.buttonSideBar:hover{color: var( --blue-dark);}
+.sidebarDisable {left: -100%;position: fixed;}
+.sidebar{left: 0;background: #fff;width: 100px;height: 100vh;}
+.logo{margin: 6rem 1.5rem;}
+.containerIcons{margin-top: 0rem;display: flex;flex-direction: column;}
+.button{background:#fff ;border: none;margin-left: 0.05rem;margin-top: 1rem;color: #666666;}
+.button:hover{border-left: 4px solid #5965E0;color: #5965E0;}
+@media(max-width:767px){.sidebar{height: 67rem;}}
