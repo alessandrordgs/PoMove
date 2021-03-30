@@ -1,4 +1,4 @@
-.siderbar {
+.sidebar {
     background: #fff;
     width: 100px;
     height: 100vh;
@@ -26,4 +26,10 @@
     border-left: 4px solid #5965E0;
     color: #5965E0;
    
+}
+
+@media(max-width:767px){
+    .sidebar{
+        visibility: hidden;
+    }
 }

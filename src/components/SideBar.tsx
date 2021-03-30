@@ -1,8 +1,8 @@
 import {FiAward, FiHome} from 'react-icons/fi'
 import styles from '../styles/components/SiderBar.module.css'
-export function SiderBar(){
+export function SideBar(){
     return(
-        <aside className={styles.siderbar}>
+        <aside className={styles.sidebar}>
             <header className={styles.logo}>
               <img src="icons/logoSideBar.svg" alt=""/>
             </header>
