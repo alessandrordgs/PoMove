@@ -112,6 +112,6 @@
 
 @media(max-width:767px){
     .ChallengeBoxContainer{
-        margin-top: 1rem;
+        margin: 1rem 0 2rem 0;
     }
 }
