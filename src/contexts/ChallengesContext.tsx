@@ -62,13 +62,6 @@ function closeLevelUpModal (){
 }
 
 function startNewChallenge (){
-    if (Notification.permission === 'granted'){
-        new Notification('Novo desafio'
-         //   {
-         //      body: `Valendo ${challenge.amount}xp!`
-         //  }
-         )
-      }
     const randomChallengeIndex = Math.floor(Math.random() * challenges.length)
     const challenge = challenges [randomChallengeIndex];
 
@@ -76,7 +69,13 @@ function startNewChallenge (){
 
     //  new Audio('/notification.mp3').play()
 
-    
+    //  if (Notification.permission === 'granted'){
+    //    new Notification('Novo desafio'
+    //     //   {
+    //     //      body: `Valendo ${challenge.amount}xp!`
+    //     //  }
+    //     )
+    //  }
 }
 
 function resetChallenge (){
