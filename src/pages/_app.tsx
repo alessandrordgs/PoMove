@@ -1,15 +1,9 @@
 import '../styles/global.css'
-import { useState } from 'react'
 
-
-
-function MyApp({ Component, pageProps }) {
-  
-  
+function MyApp({ Component, pageProps }) { 
   return ( 
-              <Component {...pageProps} />
+    <Component {...pageProps} />
   )
 }
-
 
 export default MyApp
